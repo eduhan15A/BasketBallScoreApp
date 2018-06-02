@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun btn3PB(view: View) {
-        teamB.treePointsBasket() 
+        teamB.treePointsBasket()
         updateScore()
 
     }

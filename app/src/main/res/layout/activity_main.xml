@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorBgGray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin16"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/team_a"
+                android:textAlignment="center"
+                android:textSize="@dimen/smallSize" />
+
+            <TextView
+                android:id="@+id/txtScoreA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin16"
+                android:text="@string/initialScore"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="@dimen/bigSize" />
+
+
+            <Button
+                android:id="@+id/btn3PA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/colorYellowButtons"
+                android:fontFamily="sans-serif-medium"
+                android:onClick="btn3PA"
+                android:text="@string/_3points" />
+
+            <Button
+                android:id="@+id/btn2PA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/margin24"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorYellowButtons"
+                android:fontFamily="sans-serif-medium"
+                android:onClick="btn2PA"
+                android:text="@string/_2points" />
+
+            <Button
+                android:id="@+id/btnFTA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/margin24"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorYellowButtons"
+                android:fontFamily="sans-serif-medium"
+                android:onClick="btnFTA"
+                android:text="@string/_1point" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/lineWidth"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"></View>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/team_b"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:id="@+id/txtScoreB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin16"
+                android:text="@string/initialScore"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="@dimen/bigSize" />
+
+
+            <Button
+                android:id="@+id/btn3PB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/margin24"
+                android:layout_marginTop="@dimen/margin24"
+                android:background="@color/colorYellowButtons"
+                android:fontFamily="sans-serif-medium"
+                android:onClick="btn3PB"
+                android:text="@string/_3points" />
+
+            <Button
+                android:id="@+id/btn2PB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/margin24"
+                android:layout_marginTop="@dimen/margin8"
+                android:background="@color/colorYellowButtons"
+                android:fontFamily="sans-serif-medium"
+                android:onClick="btn2PB"
+                android:text="@string/_2points" />
+
+            <Button
+                android:id="@+id/btnFTB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/margin24"
+                android:layout_marginTop="@dimen/margin8"
+                android:background="@color/colorYellowButtons"
+                android:fontFamily="sans-serif-medium"
+                android:onClick="btnFTB"
+                android:text="@string/_1point" />
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin32"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorYellowButtons"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="btnReset"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</android.support.constraint.ConstraintLayout>
